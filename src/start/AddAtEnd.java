@@ -4,6 +4,7 @@ public class AddAtEnd{
 
 	public static void main(String[] args) {
 
+		System.out.println("TESTING");
 		int[] a = new int[10];
 		a[0] = 1;
 		a[1] = 3;
