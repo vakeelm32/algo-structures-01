@@ -14,21 +14,21 @@ public class AddElementAtEnd {
 
 		System.out.println("Before Inserting");
 		for (int i = 0; i < a.length; i++) {
-			System.out.println(a[i]);
+			System.out.print(a[i] + " ");
 		}
-		
+		System.out.println();
+		int index = 6;
 		int element = 100;
 
 		for (int i = 0; i < a.length; i++) {
-			if(a[i]==0) {
+			if (i > index) {
 				a[i] = element;
-				break;
 			}
 		}
-		
+
 		System.out.println("After Inserting");
 		for (int i = 0; i < a.length; i++) {
-			System.out.println(a[i]);
+			System.out.print(a[i] + " ");
 		}
 
 	}
