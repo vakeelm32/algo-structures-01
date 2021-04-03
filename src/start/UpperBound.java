@@ -3,26 +3,27 @@ package start;
 public class UpperBound {
 	public static void main(String[] args) {
 
-		int[] a = { 4, 7, 11, 18, 21, 26, 30, 35 };
+		int[] a = { 2, 3, 4, 8, 10, 13, 17, 19, 23 };
 
-		int target = 26;
+		int key = 9;
 		int start = 0;
 		int end = a.length - 1;
-		int result = -1;
+		int result = 0;
+
 		while (start <= end) {
+			System.out.println("Start : " + start + " | End : " + end);
 			int mid = (start + end) / 2;
-			if (a[mid] < target) {
-				start = mid + 1;
-			} else if (a[mid] > target) {
+
+			if (a[mid] > key) {
+				result = mid;
 				end = mid - 1;
 			} else {
-				result = mid + 1;
-				break;
+				start = mid + 1;
 			}
 
 		}
-		System.out.println("Upper Bound of the target is at the index : " + result);
+		System.out.println(result);
 
 	}
-
 }
+
