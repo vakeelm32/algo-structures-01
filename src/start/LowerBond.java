@@ -3,9 +3,9 @@ package start;
 
 public class LowerBond 
 {
-public static void main(String[] args) 
+public static void main (String args[])
 {
-	int[]a= {1,3,5,8,9,11,14,16};
+	int [] a= {2,3,5,6,7,9,11,13};
 	int target = 11;
 	int start = 0;
 	int end = a.length-1;
@@ -25,14 +25,14 @@ public static void main(String[] args)
 		{
 			System.out.println("lower element :" +mid);
 			break;
+	
+	
+	
 		}
-		}
-	
-		
+	}
 }
-	
-	
 }
+
 
 	
 
