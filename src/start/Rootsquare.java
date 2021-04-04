@@ -4,7 +4,7 @@ public class Rootsquare {
 	
 
 		public static void main(String[] args) {
-			int number = 10;
+			int number = 45;
 			int start = 0;
 			int end = number;
 
@@ -14,7 +14,8 @@ public class Rootsquare {
 
 				int mid = (start + end) / 2;
 
-				if (mid * mid <= number) {
+				if (mid * mid <= number) 
+				{
 					result = mid;
 					start = mid + 1;
 				} else {
@@ -22,7 +23,8 @@ public class Rootsquare {
 				}
 
 			}
-			System.out.println(result);
-		}
+			{
+			System.out.println("Square Root of numbers is :" +result);
+		}}
 
 }
