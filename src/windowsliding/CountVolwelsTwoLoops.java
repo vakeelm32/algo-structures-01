@@ -3,8 +3,10 @@ package windowsliding;
 public class CountVolwelsTwoLoops {
 	public static void main(String[] args) {
 
-		String str = "A B C B E O U I";
+		String str = "ABCBEOUI";
 
+		int compare = Float.compare(1f,2f);
+		
 		int k = 4;
 
 		for (int i = 0; i < str.length() - k + 1; i++) {
