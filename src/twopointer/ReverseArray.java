@@ -7,6 +7,7 @@ public class ReverseArray {
 
 		int[] a = { 1, 2, 3, 4, 5, 6 };
 
+		// 6 ,5 
 		int[] c = new int[a.length];
 
 		int last = a.length - 1;
