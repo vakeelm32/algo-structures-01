@@ -17,7 +17,8 @@ public class CheckIfSame {
 		while (p1 < a.length - 1 && p2 < b.length - 1) {
 
 			int element1 = a[p1];
-			int element2 = b[p1];
+			int element2 = b[p2];
+
 			if (element1 < element2) {
 				p1 = p1 + 1;
 
@@ -25,10 +26,12 @@ public class CheckIfSame {
 				p2 = p2 + 1;
 
 			} else {
-				System.out.println(element1);
+				c[count] = element1;
+				System.out.println(Arrays.toString(c));
 				p1++;
 				p2++;
 			}
+			count = count + 1;
 
 		}
 
