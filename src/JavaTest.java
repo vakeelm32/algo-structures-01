@@ -1,32 +1,45 @@
-import java.util.Arrays;
 
 public class JavaTest {
 
-	public static void main(String[] args) {
+	public static void print2largest() {
 
-		int[] a = { 11, 2, 5, 1, 3, 6, 2, 12 };
+		int arr[] = { 12, 35, 1, 10, 2, 8 };
+		int n = arr.length;
 
-		int n = a.length;
-		int start = 0;
-		int k = 11;
+		int secondLargestElement = Integer.MIN_VALUE;
+		int lagestElement = arr[0];
 
-		int sumValue = 0;
-		int ans = Integer.MAX_VALUE;
-
-		System.out.println(Arrays.toString(Arrays.copyOfRange(a, 1, 3)));
-		for (int end = 0; end < n; end++) {
-
-			sumValue = sumValue + a[end];
-			while (sumValue >= k && end >= start) {
-				if (sumValue == k) {
-					ans = Math.min(ans, end - start + 1);
-				}
-				sumValue = sumValue - a[start];
-				start = start + 1;
+		for (int i = 1; i < arr.length; i++) {
+			int element = arr[i];
+			if (element > lagestElement) {
+				secondLargestElement = lagestElement;
+				lagestElement = arr[i];
+			} else if (element != lagestElement && element > secondLargestElement) {
+				secondLargestElement = element;
 			}
 		}
-		System.out.println(ans);
-
+		System.out.println("Second lagest element  - " + secondLargestElement);
 	}
 
+	public static void main(String[] args) {
+		int arr[] = { 12, 35, 1, 10, 2, 80 };
+		int n = arr.length;
+
+		int secondLargestElementIndex = -1;
+		int lagestElementIndex = 0;
+
+		for (int i = 1; i < arr.length; i++) {
+			int element = arr[i];
+			int elementAtLagest = arr[lagestElementIndex];
+			if (element > elementAtLagest) {
+				secondLargestElementIndex = lagestElementIndex;
+				lagestElementIndex = i;
+			} else if (element != elementAtLagest && element > arr[secondLargestElementIndex]) {
+				secondLargestElementIndex = i;
+			}
+		}
+		System.out.println("secondLargestElementIndex  - " + secondLargestElementIndex);
+		print2largest();
+
+	}
 }
