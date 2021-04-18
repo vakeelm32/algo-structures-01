@@ -3,7 +3,7 @@ package start;
 public class UpperBound {
 	public static void main(String[] args) {
 
-		int[] a = { 2, 3, 4, 8, 10, 13, 17, 19, 23 };
+		int[] a = { 2, 3, 4, 8, 9, 9, 9, 10, 13, 17, 19, 23 };
 
 		int key = 9;
 		int start = 0;
@@ -26,4 +26,3 @@ public class UpperBound {
 
 	}
 }
-

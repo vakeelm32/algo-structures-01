@@ -27,6 +27,7 @@ public class CheckIfSame {
 
 			} else {
 				c[count] = element1;
+				c[count] = element2;
 				System.out.println(Arrays.toString(c));
 				p1++;
 				p2++;

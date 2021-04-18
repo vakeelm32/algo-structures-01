@@ -8,7 +8,7 @@ public class MinElement {
 		a[0] = 11;
 		a[1] = 3;
 		a[2] = 10;
-		a[3] = 13;
+		a[3] = 1;
 		a[4] = 96;
 		a[5] = 24;
 
