@@ -8,7 +8,7 @@ public class upperbond
 
 			int[] a = {12,14,15,16,17,21,22,23 };
 
-			int target = 15;
+			int target = 22;
 			int start = 0;
 			int end = a.length - 1;
 			int result = 0;
