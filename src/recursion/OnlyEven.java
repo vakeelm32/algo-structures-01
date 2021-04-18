@@ -9,16 +9,17 @@ public class OnlyEven {
 	public static void function(int n) {
 		int even = 0;
 
-		if (n > 0) {
+		if (n > 1) {
 			function(n - 1);
 
 		}
 
 		if (n % 2 == 0) {
 			even = n;
+			System.out.println(even);
 
 		}
-		System.out.println(even);
+		
 
 	}
 
