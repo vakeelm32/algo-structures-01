@@ -16,9 +16,9 @@ public static void main(String[] args) {
 
 		if (n % 2 == 0) {
 			even = n;
-
+			System.out.println(even);
 		}
-		System.out.println(even);
+		
 
 	}
 
