@@ -12,10 +12,9 @@ public class CountVowelsInLoop {
 			boolean isVowel = isVowel(element);
 			if (isVowel) {
 				sum = sum + 1;
-				
-				
+
 			}
-			
+
 		}
 		System.out.println("window sum - " + sum);
 

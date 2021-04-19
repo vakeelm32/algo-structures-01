@@ -1,8 +1,7 @@
-package start;
+package recursion;
 
-public class Program {
-
-		public static int fibonacciRecursion(int n){
+public class FibonacciSeries {
+	public static int fibonacciRecursion(int n){
 		if(n == 0){
 			return 0;
 		}
@@ -17,6 +16,6 @@ public class Program {
 		for(int i = 0; i < maxNumber; i++){
 				System.out.print(fibonacciRecursion(i) +" ");
 			}
-		}
- 
-	}
+
+}
+}

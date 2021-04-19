@@ -1,30 +1,29 @@
 package start;
 
 public class Rootsquare {
-	
 
-		public static void main(String[] args) {
-			int number = 45;
-			int start = 0;
-			int end = number;
+	public static void main(String[] args) {
+		int number = 45;
+		int start = 0;
+		int end = number;
 
-			int result = 0;
-			
-			while (start <= end) {
+		int result = 0;
 
-				int mid = (start + end) / 2;
+		while (start <= end) {
 
-				if (mid * mid <= number) 
-				{
-					result = mid;
-					start = mid + 1;
-				} else {
-					end = mid - 1;
-				}
+			int mid = (start + end) / 2;
 
+			if (mid * mid <= number) {
+				result = mid;
+				start = mid + 1;
+			} else {
+				end = mid - 1;
 			}
-			{
-			System.out.println("Square Root of numbers is :" +result);
-		}}
+
+		}
+		{
+			System.out.println("Square Root of numbers is :" + result);
+		}
+	}
 
 }
