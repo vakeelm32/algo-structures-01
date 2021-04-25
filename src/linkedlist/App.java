@@ -6,7 +6,6 @@ public class App {
 		MyLinkedList list = new MyLinkedList();
 
 		list.add(100);
-
 		list.add(10);
 		list.add(4);
 		list.add(8);
@@ -19,6 +18,7 @@ public class App {
 class MyLinkedList {
 
 	private Node head;
+	
 	public void add(int data) {
 		Node newNode = new Node(data);
 		head = newNode;
