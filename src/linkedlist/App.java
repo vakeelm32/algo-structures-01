@@ -4,13 +4,15 @@ public class App {
 
 	public static void main(String[] args) {
 		MyLinkedList list = new MyLinkedList();
-
 		list.add(100);
 		list.add(10);
 		list.add(4);
 		list.add(8);
 		list.add(182);
 		list.add(200);
+		
+		list.print();
+		
 
 	}
 }
@@ -18,10 +20,34 @@ public class App {
 class MyLinkedList {
 
 	private Node head;
+
+	public void addFront(int data) {
+		Node newNode = new Node(data);
+		
+
+	}
 	
 	public void add(int data) {
 		Node newNode = new Node(data);
-		head = newNode;
+		if (head == null) {
+			head = newNode;
+		} else {
+			Node current = head;
+			while (current.next != null) {
+				current = current.next;
+			}
+			current.next = newNode;
+		}
+
+	}
+
+	public void print() {
+		Node current = head;
+		while (current != null) {
+			System.out.print(current.data + " = > ");
+			current = current.next;
+		}
+
 	}
 
 }
