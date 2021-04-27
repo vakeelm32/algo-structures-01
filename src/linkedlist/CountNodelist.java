@@ -1,8 +1,10 @@
 package linkedlist;
 
-public class Addfrontlist {
+import linkedlist.Addfrontlist.Node;
+
+public class CountNodelist {
 	public static void main(String args[]) {
-//creating a linkedlist
+
 		Addfrontlist l = new Addfrontlist();
 
 		l.insertfront(11);
@@ -23,18 +25,17 @@ public class Addfrontlist {
 	}
 
 	public void print() {
-		
+		int count = 0;
 		Node last = head;
 		while (last != null) {
-			 
-			System.out.println(last.data +  " ");
+
+			System.out.println(last.data + " ");
 			last = last.next;
-			
-			
-			//System.out.println("Length of an node is::" +count);
-		//	count = count + 1;
+
+			System.out.println("Length of an node is::" + count);
+			count = count + 1;
 		}
-		
+
 	}
 
 	Node head;
