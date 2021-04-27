@@ -4,16 +4,13 @@ public class App {
 
 	public static void main(String[] args) {
 		MyLinkedList list = new MyLinkedList();
-		list.add(100);
-		list.add(10);
-		list.add(4);
-		list.add(8);
-		list.add(182);
-		list.add(200);
-		
+		list.insertFront(20);
+		list.insertFront(2);
+		list.insertFront(4);
+		list.insertFront(1);
 		list.print();
-		
-
+		//int length = list.length();
+		//System.out.println("length : " + length);
 	}
 }
 
@@ -21,12 +18,30 @@ class MyLinkedList {
 
 	private Node head;
 
-	public void addFront(int data) {
-		Node newNode = new Node(data);
-		
-
+	public void insertFront(int data) {
+		Node new_node = new Node(data);
+		new_node.next = head;
+		head = new_node;
 	}
 	
+	public void insertFront(int data,int count) {
+	
+	}
+
+	public int length() {
+		if (head == null) {
+			return 0;
+		}
+		int count = 1;
+		Node current = head;
+		while (current.next != null) {
+			current = current.next;
+			count = count + 1;
+		}
+		return count;
+
+	}
+
 	public void add(int data) {
 		Node newNode = new Node(data);
 		if (head == null) {
