@@ -9,8 +9,12 @@ public class App {
 		list.insertFront(4);
 		list.insertFront(1);
 		list.print();
-		//int length = list.length();
-		//System.out.println("length : " + length);
+
+		System.out.println("\n removing element");
+		list.deleteNode(1);
+		list.print();
+		// int length = list.length();
+		// System.out.println("length : " + length);
 	}
 }
 
@@ -23,9 +27,29 @@ class MyLinkedList {
 		new_node.next = head;
 		head = new_node;
 	}
-	
-	public void insertFront(int data,int count) {
-	
+
+	public void deleteNode(int target) {
+
+		if (head == null) {
+			return;
+		}
+		if (head.data == target) {
+			head = head.next;
+			return;
+		}
+		Node current = head;
+		while (current.next != null) {
+			if (current.next.data == target) {
+				current.next = current.next.next;
+				break;
+			}
+			current = current.next;
+		}
+
+	}
+
+	public void insertFront(int data, int count) {
+
 	}
 
 	public int length() {
