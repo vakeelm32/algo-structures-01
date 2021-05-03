@@ -2,17 +2,27 @@
 public class Test001 {
 
 	public static void main(String[] args) {
-		String str = "vakeel";
-		reverse(str);
+
+		DataHiding obj = new DataHiding();
+		// obj.adharnumber =10;
+		int adharnumber = obj.getAdharnumber();
+		System.out.println(adharnumber);
+
+		obj.setAdharnumber(100);
 	}
 
-	public static void reverse(String str) {
+}
 
-		if (str.length() == 0) {
-			return;
-		}
-		String substring = str.substring(1);
-		reverse(substring);
-		System.out.println(str.charAt(0));
+class DataHiding {
+
+	private int adharnumber;
+
+	public int getAdharnumber() {
+		return adharnumber-1000;
 	}
+
+	public void setAdharnumber(int adharnumber) {
+		this.adharnumber = adharnumber + 200;
+	}
+
 }
