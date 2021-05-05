@@ -1,4 +1,4 @@
-package test;
+package test.cons.demo;
 
 public class ConsDemo {
 
