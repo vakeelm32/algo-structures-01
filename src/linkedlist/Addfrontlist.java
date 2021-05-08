@@ -31,8 +31,7 @@ public class Addfrontlist {
 			last = last.next;
 			
 			
-			//System.out.println("Length of an node is::" +count);
-		//	count = count + 1;
+			
 		}
 		
 	}
