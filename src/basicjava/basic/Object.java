@@ -1,4 +1,4 @@
-package test.cons.demo;
+package basicjava.basic;
 
 /*
  * public class Object {

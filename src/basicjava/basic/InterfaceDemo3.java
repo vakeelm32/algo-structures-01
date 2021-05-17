@@ -1,31 +1,33 @@
-package test.cons.demo;
+package basicjava.basic;
 
-public class InterfaceDemo {
+public class InterfaceDemo3 {
 
 	public static void main(String[] args) {
 
-		Iphone obj = new Iphone();
+		Iphone1 obj = new Iphone1();
 		obj.BattyBrand();
-		obj.BattyType();
 		obj.mobileBrand();
 		obj.mobileType();
-		
-		
+		obj.show();
+
 	}
 }
 
-interface Battery {
-	void BattyType();
+interface Battery2 {
+	void show();
+
 	void BattyBrand();
 }
 
-interface Mobile {
-	int x = 10; // public static final int x = 10;
+interface Mobile1 {
 	void mobileType();
+
 	void mobileBrand();
+
+	void show();
 }
 
-class Iphone implements Mobile, Battery {
+class Iphone1 implements Mobile1, Battery2 {
 
 	@Override
 	public void mobileType() {
@@ -38,13 +40,13 @@ class Iphone implements Mobile, Battery {
 	}
 
 	@Override
-	public void BattyType() {
-		System.out.println("Battery type");
+	public void BattyBrand() {
+		System.out.println("Battery Brand");
 	}
 
 	@Override
-	public void BattyBrand() {
-		System.out.println("Battery Brand");
+	public void show() {
+		System.out.println("SHow Iphone");
 	}
 
 }

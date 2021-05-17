@@ -1,4 +1,4 @@
-package test.cons.demo;
+package basicjava.basic;
 
 class Sapient2 {
 	static String companyName = "Sapient";

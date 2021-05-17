@@ -1,4 +1,4 @@
-package test.cons.demo;
+package basicjava.basic;
 
 class Parent13 {
 	public Parent13() {

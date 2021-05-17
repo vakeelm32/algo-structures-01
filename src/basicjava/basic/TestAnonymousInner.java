@@ -1,4 +1,4 @@
-package test.cons.demo;
+package basicjava.basic;
 
 abstract class Person33 {
 	abstract void eat();
