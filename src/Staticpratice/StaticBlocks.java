@@ -1,6 +1,6 @@
 package Staticpratice;
-class Testpractice
-{
+
+class Testpractice {
 	static {
 		System.out.println("Block 1");
 	}
@@ -8,14 +8,12 @@ class Testpractice
 		System.out.println("Block 2");
 	}
 }
-	public class StaticBlocks {
+
+public class StaticBlocks {
 	public static void main(String args[]) {
 		System.out.println("Main");
-	Testpractice t=new Testpractice();
-	
-	}
-	
+		Testpractice t = new Testpractice();
 
-	
+	}
 
 }
