@@ -1,10 +1,12 @@
 
-public class JavaTest {
+public class JavaTest extends ssdss {
 
 	
+}
 
-	public static void main(String[] args) {
-		
+class ssdss {
 
+	public static void x() {
+		System.out.println("2");
 	}
 }
