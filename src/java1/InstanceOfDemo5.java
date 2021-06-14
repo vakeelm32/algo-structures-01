@@ -3,16 +3,19 @@ package java1;
 public class InstanceOfDemo5 {
 
 	public static void main(String args[]) {
-		Object obj = new Dog81();
-		
+
+		 Object test = test();
 
 	}
-}
 
-class Animal81 {
+	public static Object test() {
+		InstanceOfDemo5 obj = new InstanceOfDemo5();
+		return obj;
+	}
 
-}
-
-class Dog81 extends Animal81 {
+	public static String testString() {
+		String a = "asas";
+		return a;
+	}
 
 }
