@@ -29,6 +29,7 @@ public class Overriding {
 	public static void main(String[] args) {
 		TV t = new SmartTV();
 		t.changeChannel();
+		t.browse();
 		t.switchOn();
 		//t.browse();
 		
