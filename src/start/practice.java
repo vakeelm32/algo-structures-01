@@ -1,20 +1,38 @@
 package start;
 
-public class practice {
-	public static void main(String[] args)
-	{
-	int[] a={4,5,6,8,3,18};
-	int max=a[0];
-	for(int i=1; i<a.length; i++)
-	{
-		if(max < a[i])
-		{
-			max=a[i];
-			
-		}
-	}
-	System.out.println("maximum number is "+max);
-
+interface Printable {
 }
 
+class A implements Printable {
+	public void a() {
+		System.out.println("a method");
+	}
+}
+
+class B implements Printable {
+	public void b() {
+		System.out.println("b method");
+	}
+}
+
+class Call {
+	void invoke(Printable p) {// upcasting
+		if (p instanceof A) {
+			A a = (A) p;// Downcasting
+			a.a();
+		}
+		if (p instanceof B) {
+			B b = (B) p;// Downcasting
+			b.b();
+		}
+
+	}
+}// end of Call class
+
+class practice {
+	public static void main(String args[]) {
+		Printable p = new B();
+		Call c = new Call();
+		c.invoke(p);
+	}
 }
