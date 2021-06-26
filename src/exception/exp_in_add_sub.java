@@ -16,7 +16,7 @@ public class exp_in_add_sub {
 			
 
 			String userOperation = sc.nextLine();
-			System.out.println(userOperation);
+			//System.out.println(userOperation);
 
 			switch (userOperation)
 {
