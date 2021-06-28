@@ -10,7 +10,7 @@ class Parentt2 {
 	}
 }
 
-class Child1 extends Parent2 {
+class Child1 extends Parentt2 {
 	Child1() {
 		System.out.println("Non-Param of child");
 	}
