@@ -36,3 +36,7 @@ class MyThread extends Thread {
         }
     }
 }
+
+// Runnable - implement
+
+//
