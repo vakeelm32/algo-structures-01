@@ -38,5 +38,19 @@ class PrintSumNumbers implements Runnable {
     private synchronized void updateCounter() {
         totalSum = totalSum + 1;
     }
+
+    private void updateCounter2() {
+        synchronized (this) {
+            totalSum = totalSum + 1;
+        }
+    }
+
+    public synchronized void display() {
+        System.out.println("Inside display");
+    }
+
+    public void show() {
+        System.out.println("show method");
+    }
 }
 
