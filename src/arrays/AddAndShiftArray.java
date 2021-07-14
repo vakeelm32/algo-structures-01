@@ -8,7 +8,8 @@ public class AddAndShiftArray {
 		a[1] = 3;
 		a[2] = 10;
 		a[3] = 13;
-		a[4] = 11;
+		a[4] = 11;    
+		
 		a[5] = 24;
 		
 		int index = 4;
