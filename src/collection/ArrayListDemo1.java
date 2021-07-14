@@ -6,7 +6,7 @@ import java.util.ArrayList;
 interface A {
 }
 
-public class List implements A {
+public class ArrayListDemo1 implements A {
 
     public static void main(String[] args) {
         int arr[] = new int[11];
