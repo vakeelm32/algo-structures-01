@@ -9,7 +9,7 @@ public class ArrayListDemo2 {
 		
 		//1.Create a new arrayList
 		List<Integer> l1 = new ArrayList<Integer>(15);
-		
+			
 		l1.add(5);
 		l1.add(6);
 		l1.add(7);
@@ -35,7 +35,7 @@ public class ArrayListDemo2 {
 		if(l1.contains(21)) {
 			System.out.println("abc");
 		}
-		
+		System.out.println("isempty before clear:"+l1);
 		System.out.println("isempty before clear:"+l1.isEmpty());
 		l1.clear();
 		System.out.println("isEmpty after clear:" + l1.isEmpty());
@@ -66,6 +66,7 @@ public class ArrayListDemo2 {
 		
 		int imran = 5;
 		
+		//custom type object stored in arrayList
 		List<Employee> listOfEmployees = new ArrayList<Employee>();
 		listOfEmployees.add(e1);
 		listOfEmployees.add(e2);
@@ -96,11 +97,22 @@ class Employee{
 		
 	}
 
-	@Override
-	public String toString() {
-		return "Employee [empId=" + empId + ", name=" + name + "]";
+	public int getEmpId() {
+		return empId;
 	}
-	
+
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	
 	
 	
