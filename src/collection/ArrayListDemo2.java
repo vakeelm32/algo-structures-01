@@ -75,8 +75,8 @@ public class ArrayListDemo2 {
 		listOfEmployees.add(e5);
 		
 		for(int i=0;i<listOfEmployees.size();i++) {
-			
-			System.out.println(listOfEmployees.get(i));
+			Employee employee = listOfEmployees.get(i);
+			System.out.println(employee.getEmpId());
 		}
 	}
 	
@@ -86,6 +86,7 @@ public class ArrayListDemo2 {
 
 
 class Employee{
+	
 	
 	private int empId;
 	private String name;
@@ -113,7 +114,11 @@ class Employee{
 		this.name = name;
 	}
 
-	
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", name=" + name + "]";
+	}
+
 	
 	
 }
